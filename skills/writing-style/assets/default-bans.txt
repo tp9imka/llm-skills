@@ -1,0 +1,90 @@
+# Default ban list - generic AI-writing tells. Version 2026-11.
+# Copied into every new profile as bans.txt. The profile copy is the authority:
+# `build` lists every item the author actually uses, and those must be removed or
+# justified - a measured trait of the author beats a generic rule.
+#
+# Sections:
+#   [strong]  flags on its own; each hit counts as a deviation
+#   [weak]    flags only when 3+ weak hits cluster in one draft
+#   [regex]   strong, Python regular expressions (case-insensitive, multiline)
+# Lines before any section are strong. ' #' starts a comment.
+#
+# Tells date with model generations: re-check this list every few months against
+# Wikipedia:Signs_of_AI_writing. Clues, not proof - one hit is weak evidence.
+
+[strong]
+delve
+delves
+delving
+tapestry
+testament to
+in today's fast-paced world
+in the ever-evolving
+ever-evolving landscape
+navigate the complexities
+game-changer
+game changer
+i'm excited to share
+i'm thrilled to
+thrilled to announce
+let's dive in
+let's dive into
+dive deep into
+unlock the power
+unleash the power
+embark on a journey
+a rich tapestry
+stands as a testament
+plays a pivotal role
+it's worth noting that
+it is worth noting that
+i hope this helps
+great question
+as an ai
+certainly! here
+in conclusion,
+to sum up,
+
+[weak]
+crucial
+pivotal
+seamless
+seamlessly
+robust
+leverage
+landscape
+realm
+foster
+elevate
+empower
+holistic
+intricate
+nuanced
+multifaceted
+showcase
+underscore
+underscores
+paramount
+meticulous
+meticulously
+vibrant
+bustling
+boasts
+groundbreaking
+cutting-edge
+transformative
+synergy
+journey
+ecosystem
+additionally,
+furthermore,
+moreover,
+notably,
+ultimately,
+
+[regex]
+^\s*(?:agree|thoughts|what do you think)\?\s*$
+let me know in the comments
+\bnot (?:just|only|merely) [^.,;!?\n]{1,40}, but\b
+\bit'?s not (?:about )?[^.,;!?\n]{1,40}[,;]\s*it'?s\b
+→

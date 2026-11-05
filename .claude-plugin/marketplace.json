@@ -1,0 +1,22 @@
+{
+  "name": "tp9imka-skills",
+  "owner": {
+    "name": "Ivan Antsimonau"
+  },
+  "metadata": {
+    "description": "Agent Skills for LLM coding agents",
+    "version": "2.0.0"
+  },
+  "plugins": [
+    {
+      "name": "writing-style",
+      "description": "Measure an author's writing style from their texts, then write and verify new texts in that voice.",
+      "version": "2.0.0",
+      "source": "./",
+      "strict": false,
+      "skills": ["./skills/writing-style"],
+      "category": "writing",
+      "tags": ["style", "tone-of-voice", "writing", "stylometry"]
+    }
+  ]
+}
